@@ -1219,7 +1219,7 @@ $(function() {
   function downloadV12MV12() {
     lscache.addProgressHandler(function(evt) {
       $('#progressbar div').css('width', ((evt.loaded / v12_total_size) * 100 * v12_loading_percent / 100) + '%');
-    }).require({ url: 'https://compuserve-rocks.github.io/Kings-diary/TI68k-emulator-versionJS/ti89rom.js' }).then(function () {
+    }).require({ url: '/rom/ti89rom.js' }).then(function () {
       lscache.addProgressHandler(function(evt) {
         $('#progressbar div').css('width', (((v12m_size + evt.loaded) / v12_total_size) * 100 * v12_loading_percent / 100) + '%');
       }).require({ url: '/js/v12.js' }).then(function () {
