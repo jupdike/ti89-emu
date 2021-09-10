@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="device" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 62.6 62.6" style="enable-background:new 0 0 62.6 62.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#242015;}
+	.st1{fill:#50483B;}
+	.st2{fill:#443E35;}
+	.st3{fill:#38332C;}
+	.st4{fill:#2D2823;}
+	.st5{fill:url(#SVGID_1_);}
+	.st6{fill:#FFF5E1;}
+</style>
+<g id="Layer_4">
+	<g>
+		<g>
+			<g>
+				<ellipse class="st0" cx="31.3" cy="31.3" rx="31.3" ry="31.3"/>
+				<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -13.5601 31.3037)" class="st0" cx="31" cy="32" rx="30.6" ry="30.6"/>
+				
+					<ellipse transform="matrix(0.3195 -0.9476 0.9476 0.3195 -10.108 51.5256)" class="st1" cx="30.8" cy="32.8" rx="29.2" ry="29.5"/>
+				
+					<ellipse transform="matrix(3.327792e-02 -0.9994 0.9994 3.327792e-02 -2.4006 61.5182)" class="st2" cx="30.6" cy="32" rx="27.1" ry="27.1"/>
+				<circle class="st3" cx="30.8" cy="31.8" r="26.6"/>
+				<circle class="st4" cx="31.1" cy="31.5" r="26.2"/>
+				
+					<radialGradient id="SVGID_1_" cx="31.3" cy="-66.0228" r="25.7" gradientTransform="matrix(1 0 0 1 0 97.3228)" gradientUnits="userSpaceOnUse">
+					<stop  offset="0" style="stop-color:#50483B"/>
+					<stop  offset="0.48" style="stop-color:#4E4639"/>
+					<stop  offset="0.6529" style="stop-color:#474034"/>
+					<stop  offset="0.7761" style="stop-color:#3C3529"/>
+					<stop  offset="0.875" style="stop-color:#2B261B"/>
+					<stop  offset="0.905" style="stop-color:#242015"/>
+					<stop  offset="0.9486" style="stop-color:#332D22"/>
+					<stop  offset="0.9845" style="stop-color:#383226"/>
+				</radialGradient>
+				<circle class="st5" cx="31.3" cy="31.3" r="25.7"/>
+			</g>
+		</g>
+		<g>
+			<path class="st6" d="M20.4,18.7h10v3.9h-5.5v5.9h5.2v3.7h-5.2v9.5h-4.5V18.7L20.4,18.7z"/>
+			<path class="st6" d="M37.8,23.8L37.8,23.8L34,25.7l-0.8-3.5l5.1-2.6h3.9v22.1h-4.4L37.8,23.8L37.8,23.8z"/>
+		</g>
+	</g>
+</g>
+</svg>

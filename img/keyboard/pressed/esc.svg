@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 271 150" style="enable-background:new 0 0 271 150;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#030400;}
+	.st1{fill:url(#SVGID_1_);}
+	.st2{fill:url(#SVGID_2_);}
+	.st3{fill:url(#SVGID_3_);}
+	.st4{fill:#EDDECB;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M210.3,149.3H60.7c-32.8,0-59.6-26.8-59.6-59.6V60.3c0-32.8,26.8-59.6,59.6-59.6h149.6
+			c32.8,0,59.6,26.8,59.6,59.6v29.4C269.9,122.5,243.1,149.3,210.3,149.3z"/>
+		
+			<radialGradient id="SVGID_1_" cx="134.5938" cy="486.3959" r="104.1592" gradientTransform="matrix(1 0 0 -1 0 562)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#000000"/>
+			<stop  offset="0.4536" style="stop-color:#070604"/>
+			<stop  offset="1" style="stop-color:#231F1B"/>
+		</radialGradient>
+		<path class="st1" d="M205.1,145.1h-141c-32.8,0-59.6-26.8-59.6-59.6V65.7c0-32.8,26.8-59.6,59.6-59.6h141
+			c32.8,0,59.6,26.8,59.6,59.6v19.7C264.5,118.3,237.7,145.1,205.1,145.1z"/>
+		
+			<radialGradient id="SVGID_2_" cx="133.8889" cy="485.4897" r="100.9706" gradientTransform="matrix(1 0 0 -1 0 562)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#000000"/>
+			<stop  offset="0.8178" style="stop-color:#181510"/>
+			<stop  offset="0.9172" style="stop-color:#433B30"/>
+		</radialGradient>
+		<path class="st2" d="M201.7,141.1H66.1c-32.8,0-59.6-26.8-59.6-59.6v-9.9C6.5,38.8,33.3,12,66.1,12h135.5
+			c32.8,0,59.6,26.8,59.6,59.6v9.9C261.3,114.3,234.5,141.1,201.7,141.1z"/>
+		
+			<radialGradient id="SVGID_3_" cx="133.8889" cy="859.4278" r="124.913" gradientTransform="matrix(1 0 0 -0.5055 0 510.8504)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#000000"/>
+			<stop  offset="0.6426" style="stop-color:#181510"/>
+			<stop  offset="0.8225" style="stop-color:#231F1B"/>
+			<stop  offset="0.8933" style="stop-color:#201C18"/>
+			<stop  offset="0.9528" style="stop-color:#151310"/>
+			<stop  offset="1" style="stop-color:#070604"/>
+		</radialGradient>
+		<path class="st3" d="M196.6,138.4H71.2c-32.8,0-59.6-26.8-59.6-59.6V74c0-32.8,26.8-59.6,59.6-59.6h125.5
+			c32.8,0,59.6,26.8,59.6,59.6v4.8C256.2,111.7,229.2,138.4,196.6,138.4z"/>
+	</g>
+	<path class="st4" d="M104.8,79.4h11.3v8.1h-11.3v11.7h14.7v8.3H95.1V60.5h24.4v8.3h-14.7C104.8,68.8,104.8,79.4,104.8,79.4z"/>
+	<path class="st4" d="M140.4,73.6c-0.6-2.8-1.6-4-2.4-4.6c-1-0.8-2-0.8-3-0.8s-2,0.2-3,1c-0.8,0.8-1,2.2-1,3.4
+		c0,1.6,0.4,2.8,1.6,3.8c1.4,1.2,3.4,2,6.6,3.4c2.2,1,4.8,2.2,6.8,5.2c1.8,2.4,2.2,4.8,2.2,7.9c0,6.2-2.4,9.9-4.4,11.5
+		c-2.4,2.2-6.2,3.4-9.9,3.4c-3,0-6.4-0.8-8.9-2.8c-3.4-2.8-4.6-7.2-5-9.9l7.7-2.8c0.4,1.8,1.4,4.8,2.6,5.8c0.8,0.8,2.2,1,3.6,1
+		c1,0,2.4-0.2,3.4-1.2c0.8-0.8,1.2-2.2,1.2-3.6c0-1.6-0.4-2.8-1.6-3.8c-1.2-1.2-3.2-2-6.4-3.8c-2.4-1.2-5-2.6-6.8-5.2
+		c-1.4-2.2-2-5-2-7.9c0-4.6,1.8-8.5,4.2-10.9c2.2-2.2,5.4-3.4,8.7-3.4c2.2,0,5,0.6,7,2c2.6,1.8,4.8,5,5.6,8.9L140.4,73.6z"/>
+	<path class="st4" d="M172.1,78.6c-0.2-5.2-0.8-7-1.2-8.1c-0.8-1.8-2.2-2.4-3.8-2.4s-2.6,0.6-3.4,1.6c-0.8,1-2,4.2-2,15.5
+		c0,6.4,0.4,9.7,1.2,11.7c0.8,2,2,2.6,4,2.6c1.8,0,3-0.8,4-2.6c0.8-1.6,1.2-4.6,1.2-6.6l8.3,0.6c0,3-0.8,9.1-4.2,13.1
+		c-2.6,3-5.8,4-9.5,4c-5.4,0-8.9-2.4-10.9-5.2c-4.2-5.4-4.4-15.9-4.4-19.3c0-4,0.2-13.5,5-19.1c2-2.4,5.2-4.8,10.5-4.8
+		c4.8,0,7.7,2.2,9.3,3.6c4,4,4.6,10.7,4.6,14.5L172.1,78.6z"/>
+</g>
+</svg>
