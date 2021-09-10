@@ -51,6 +51,11 @@
   background: rbga(117, 118, 122, 0.2);
   display: none;
 }
+
+canvas {
+  image-rendering: pixelated;
+}
+
 @media screen and (min-width: 768px)  {
   .visible-s {
     display: none;

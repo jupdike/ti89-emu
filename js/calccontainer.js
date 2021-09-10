@@ -1707,7 +1707,7 @@ $(function() {
     $('#calccontainer #screen').css('top', screenTop + "px");
     $('#calccontainer #screen').css('left', screenLeft + "px");
     $('#calccontainer #screen').css('width', screenWidth + "px");
-    $('#calccontainer #screen').css('height', screenHeight + "px");
+    $('#calccontainer #screen').css('height', (screenWidth * 2) / 3.0 + "px");
     $('#progressbar').css('top', (screenTop + screenHeight / 2 - progress_bar_height / 2) + "px");
     $('#progressbar').css('width', (screenWidth - progress_bar_left * 2) + "px");
     $('#progressbar').css('left', (screenLeft + progress_bar_left) + "px");
