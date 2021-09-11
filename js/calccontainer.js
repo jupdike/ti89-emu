@@ -1242,8 +1242,8 @@ $(function() {
     }, 50);
   }
   var displayStyle = 1;
-  const calcContainerWidth1 = 9213; const calcContainerLeft1 = 1173; const calcContainerRight1 = 1410;
-  const calcContainerHeight1 = 10707; const calcContainerTop1 = 2303; const calcContainerBottom1 = 3087;
+  const calcContainerWidth1 = 10480; const calcContainerLeft1 = 1250; const calcContainerRight1 = 1330;
+  const calcContainerHeight1 = 8400; const calcContainerTop1 = 460; const calcContainerBottom1 = 3310;
   const f1Top1 = 8725; const f1Left1 = 1157; const f2Top1 = 8837; const f2Left1 = 2588; const f3Top1 = 8905; const f3Left1 = 4050;
   const f4Top1 = 8837; const f4Left1 = 5560; const f5Top1 = 8735; const f5Left1 = 7032;
   var pressedFnHeight1 = 867; var pressedFnWidth1 = 867;
@@ -1255,7 +1255,7 @@ $(function() {
   var pressedFnHeight2 = 1120; var pressedFnWidth2 = 1120;
 
   const calcContainerFitLeft = 0;
-  const calcBackOffsetTop = 400; const calcBackOffsetRight = 400; const calcBackOffsetBottom = 400; const calcBackOffsetLeft = 400;
+  const calcBackOffsetTop = 200; const calcBackOffsetRight = 400; const calcBackOffsetBottom = 200; const calcBackOffsetLeft = 400;
 
   var keysStyle = 1;
   const keysContainerWidth1 = 10510; const keysContainerHeight1 = 15360;
@@ -1699,6 +1699,7 @@ $(function() {
       $('#calccontainer #calcback').css('top', (screenTop - calcBackOffsetTop * screenHeight / calcContainerHeight) + "px");
       $('#calccontainer #calcback').css('left', (screenLeft - calcBackOffsetLeft * screenWidth / calcContainerWidth) + "px");
       $('#calccontainer #calcback').css('width', (screenWidth + (calcBackOffsetLeft + calcBackOffsetRight) * screenWidth / calcContainerWidth) + "px");
+      screenHeight = screenWidth * 2.0 / 3.0;
       $('#calccontainer #calcback').css('height', (screenHeight + (calcBackOffsetTop + calcBackOffsetBottom) * screenHeight / calcContainerHeight) + "px");
       $('#calccontainer #calcsceen').css('top', (screenTop - calcBackOffsetTop * screenHeight / calcContainerHeight) + "px");
       $('#calccontainer #calcsceen').css('left', (screenLeft - calcBackOffsetLeft * screenWidth / calcContainerWidth) + "px");
