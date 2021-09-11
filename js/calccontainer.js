@@ -1366,32 +1366,6 @@ $(function() {
       el.css("opacity", op);
     }, 50);
   }
-  function checkDisclaimer() {
-    var disclaimerExpire = localStorage.getItem('disclaimerExpire') || 0;
-    var cur_d = new Date();
-    var cur_dt = cur_d.getTime();
-    var expire_d = cur_d.getTime() + (7 * 24 * 60 * 60 * 1000);
-    if (disclaimerExpire) {
-      if (disclaimerExpire < cur_dt) {
-        disclaimerExpireFlag = true;
-      }
-    } else {
-      disclaimerExpireFlag = true;
-    }
-    if (disclaimerExpireFlag) {
-      localStorage.setItem('disclaimerExpire', expire_d);
-      var disclaimer_el = $("#disclaimer");
-      var disclaimert_el = $("#disclaimertooltip");
-      disclaimer_el.css("display", "block");
-      var disclaimert_top = parseInt(disclaimer_el.css('top')) - parseInt(disclaimert_el.css('height'));
-      var disclaimert_left = (window.innerWidth - parseInt(disclaimert_el.css('width'))) / 2;
-      disclaimert_el.css('top', disclaimert_top + 'px');
-      disclaimert_el.css('left', disclaimert_left + 'px');
-      disclaimert_el.css("display", "block");
-      document.onclick = fadeoutDisclaim;
-    }
-  }
-  checkDisclaimer();
   function adjustFnBtn(pressedimg, fnbutton, btop, bleft, bwidth, bheight, btnkey) {
     $('#' + pressedimg).css('top', btop + "px");
     $('#' + pressedimg).css('left', bleft + "px");
