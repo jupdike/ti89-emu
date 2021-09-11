@@ -1256,9 +1256,16 @@ $(function() {
 
   const calcContainerWidth2 = 10480; const calcContainerLeft2 = 1250; const calcContainerRight2 = 1330;
   const calcContainerHeight2 = 8400; const calcContainerTop2 = 460; const calcContainerBottom2 = 3310;
-  const f1Top2 = 8725; const f1Left2 = 1157; const f2Top2 = 8837; const f2Left2 = 2588; const f3Top2 = 8905; const f3Left2 = 4050;
-  const f4Top2 = 8837; const f4Left2 = 5560; const f5Top2 = 8735; const f5Left2 = 7032;
-  var pressedFnHeight2 = 867; var pressedFnWidth2 = 867;
+  const UP = 2045;
+  const SLOPE = 1.25;
+  const OFFSET = 1157;
+  const OFFSET2 = 1050;
+  const f1Top2 = 8725 - UP; const f1Left2 = (1157 - OFFSET) * SLOPE + OFFSET2;
+  const f2Top2 = 8837 - UP; const f2Left2 = (2588 - OFFSET) * SLOPE + OFFSET2;
+  const f3Top2 = 8905 - UP; const f3Left2 = (4050 - OFFSET) * SLOPE + OFFSET2;
+  const f4Top2 = 8837 - UP; const f4Left2 = (5560 - OFFSET) * SLOPE + OFFSET2;
+  const f5Top2 = 8735 - UP; const f5Left2 = (7032 - OFFSET) * SLOPE + OFFSET2;
+  var pressedFnHeight2 = 867 * SLOPE; var pressedFnWidth2 = 867 * SLOPE;
 
   const calcContainerFitLeft = 0;
   const calcBackOffsetTop = 200; const calcBackOffsetRight = 400; const calcBackOffsetBottom = 200; const calcBackOffsetLeft = 400;
