@@ -5,6 +5,9 @@
   font-weight:normal;
   font-style:normal
 }
+body {
+  background-color: #3f3b30;
+}
 #background-left {
   width: 25px;
   height: 100%;

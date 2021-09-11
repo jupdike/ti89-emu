@@ -1141,8 +1141,8 @@ if (typeof define === 'function' && define.amd) {
     lscache.clear( true );
 })( this, document );
 var memory_loaded = false;
-var default_display_style_desktop = 1;
-var default_display_style_tablet = 1;
+var default_display_style_desktop = 2;
+var default_display_style_tablet = 2;
 var default_display_style_mobile = 2;
 function bodyOnload() {
   memory_loaded = true;
@@ -1241,18 +1241,24 @@ $(function() {
       el.css("opacity", op);
     }, 50);
   }
-  var displayStyle = 1;
-  const calcContainerWidth1 = 10480; const calcContainerLeft1 = 1250; const calcContainerRight1 = 1330;
-  const calcContainerHeight1 = 8400; const calcContainerTop1 = 460; const calcContainerBottom1 = 3310;
-  const f1Top1 = 8725; const f1Left1 = 1157; const f2Top1 = 8837; const f2Left1 = 2588; const f3Top1 = 8905; const f3Left1 = 4050;
-  const f4Top1 = 8837; const f4Left1 = 5560; const f5Top1 = 8735; const f5Left1 = 7032;
-  var pressedFnHeight1 = 867; var pressedFnWidth1 = 867;
+  var displayStyle = 2;
+//   const calcContainerWidth1 = 10480; const calcContainerLeft1 = 1250; const calcContainerRight1 = 1330;
+//   const calcContainerHeight1 = 8400; const calcContainerTop1 = 460; const calcContainerBottom1 = 3310;
+//   const f1Top1 = 8725; const f1Left1 = 1157; const f2Top1 = 8837; const f2Left1 = 2588; const f3Top1 = 8905; const f3Left1 = 4050;
+//   const f4Top1 = 8837; const f4Left1 = 5560; const f5Top1 = 8735; const f5Left1 = 7032;
+//   var pressedFnHeight1 = 867; var pressedFnWidth1 = 867;
 
-  const calcContainerWidth2 = 16277; const calcContainerLeft2 = 2890; const calcContainerRight2 = 1230;
-  const calcContainerHeight2 = 11643; const calcContainerTop2 = 890; const calcContainerBottom2 = 830;
-  const f1Top2 = 1000; const f1Left2 = 920; const f2Top2 = 2975; const f2Left2 = 920; const f3Top2 = 4940; const f3Left2 = 920;
-  const f4Top2 = 6915; const f4Left2 = 920; const f5Top2 = 8910; const f5Left2 = 920;
-  var pressedFnHeight2 = 1120; var pressedFnWidth2 = 1120;
+//   const calcContainerWidth2 = 16277; const calcContainerLeft2 = 2890; const calcContainerRight2 = 1230;
+//   const calcContainerHeight2 = 11643; const calcContainerTop2 = 890; const calcContainerBottom2 = 830;
+//   const f1Top2 = 1000; const f1Left2 = 920; const f2Top2 = 2975; const f2Left2 = 920; const f3Top2 = 4940; const f3Left2 = 920;
+//   const f4Top2 = 6915; const f4Left2 = 920; const f5Top2 = 8910; const f5Left2 = 920;
+//   var pressedFnHeight2 = 1120; var pressedFnWidth2 = 1120;
+
+  const calcContainerWidth2 = 10480; const calcContainerLeft2 = 1250; const calcContainerRight2 = 1330;
+  const calcContainerHeight2 = 8400; const calcContainerTop2 = 460; const calcContainerBottom2 = 3310;
+  const f1Top2 = 8725; const f1Left2 = 1157; const f2Top2 = 8837; const f2Left2 = 2588; const f3Top2 = 8905; const f3Left2 = 4050;
+  const f4Top2 = 8837; const f4Left2 = 5560; const f5Top2 = 8735; const f5Left2 = 7032;
+  var pressedFnHeight2 = 867; var pressedFnWidth2 = 867;
 
   const calcContainerFitLeft = 0;
   const calcBackOffsetTop = 200; const calcBackOffsetRight = 400; const calcBackOffsetBottom = 200; const calcBackOffsetLeft = 400;
@@ -1296,16 +1302,10 @@ $(function() {
   adjustBar.style.display = 'block';
   function setDefaultDisplay() {
     var windowWidth = window.innerWidth;
-    if (windowWidth >= 1024) {
-      displayStyle = default_display_style_desktop;
-    } else if (windowWidth < 1024 && windowWidth >= 768) {
-      displayStyle = default_display_style_tablet;
-    } else {
-      displayStyle = default_display_style_mobile;
-      if (displayStyle == 2) {
-        divideTopRatio = windowWidth * calcContainerHeight2 / calcContainerWidth2 / windowHeight;
-      }
-    }
+      displayStyle = 2;
+    //   if (displayStyle == 2) {
+    //     divideTopRatio = windowWidth * calcContainerHeight2 / calcContainerWidth2 / windowHeight;
+    //   }
   }
   setDefaultDisplay();
   function fadeoutAdjustTooltip() {
@@ -1378,11 +1378,11 @@ $(function() {
     mapKeyboardButton(fnbutton, btnkey, pressedimg);
   }
   function adjustFnBtns() {
-    var calcContainerHeight = calcContainerHeight1; var calcContainerWidth = calcContainerWidth1;
-    var pressedContainerHeight = pressedFnHeight1; var pressedContainerWidth = pressedFnWidth1;
+    var calcContainerHeight = calcContainerHeight2; var calcContainerWidth = calcContainerWidth2;
+    var pressedContainerHeight = pressedFnHeight2; var pressedContainerWidth = pressedFnWidth2;
     var f1Key = 47; var f2Key = 39; var f3Key = 31; var f4Key = 23; var f5Key = 15;
-    var f1Top = f1Top1; var f1Left = f1Left1; var f2Top = f2Top1; var f2Left = f2Left1; var f3Top = f3Top1; var f3Left = f3Left1;
-    var f4Top = f4Top1; var f4Left = f4Left1; var f5Top = f5Top1; var f5Left = f5Left1;
+    var f1Top = f1Top2; var f1Left = f1Left2; var f2Top = f2Top2; var f2Left = f2Left2; var f3Top = f3Top2; var f3Left = f3Left2;
+    var f4Top = f4Top2; var f4Left = f4Left2; var f5Top = f5Top2; var f5Left = f5Left2;
     if (displayStyle == 2) {
       f1Top = f1Top2; f1Left = f1Left2; f2Top = f2Top2; f2Left = f2Left2; f3Top = f3Top2; f3Left = f3Left2;
       f4Top = f4Top2; f4Left = f4Left2; f5Top = f5Top2; f5Left = f5Left2;
@@ -1601,12 +1601,13 @@ $(function() {
     }
   }
   function adjustComponentsSize() {
+    console.error('adjustComponentSize called');
     windowWidth = window.innerWidth;
     windowHeight = window.innerHeight;
     var canvasWidth = windowWidth;
     var canvasHeight = windowHeight * divideTopRatio;
-    var calcContainerWidth = calcContainerWidth1; var calcContainerLeft = calcContainerLeft1; var calcContainerRight = calcContainerRight1;
-    var calcContainerHeight = calcContainerHeight1; var calcContainerTop = calcContainerTop1; var calcContainerBottom = calcContainerBottom1;
+    var calcContainerWidth = calcContainerWidth2; var calcContainerLeft = calcContainerLeft2; var calcContainerRight = calcContainerRight2;
+    var calcContainerHeight = calcContainerHeight2; var calcContainerTop = calcContainerTop2; var calcContainerBottom = calcContainerBottom2;
     if (displayStyle == 2) {
       calcContainerWidth = calcContainerWidth2; calcContainerLeft = calcContainerLeft2; calcContainerRight = calcContainerRight2;
       calcContainerHeight = calcContainerHeight2; calcContainerTop = calcContainerTop2; calcContainerBottom = calcContainerBottom2;
@@ -1635,7 +1636,7 @@ $(function() {
         }
       }
     }
-    if (displayStyle == 1) {
+    if (false) { //displayStyle == 1) {
       if (loadingMemory) {
         $('#calccontainer #calcimg').css('display', "block");
         $('#calccontainer #calcimg2').css('display', "none");
@@ -1646,8 +1647,8 @@ $(function() {
       $('#calccontainer #calcimg').css('height', imageHeight + "px");
     } else {
       if (loadingMemory) {
-        $('#calccontainer #calcimg').css('display', "none");
-        $('#calccontainer #calcimg2').css('display', "block");
+        //$('#calccontainer #calcimg').css('display', "none");
+        //$('#calccontainer #calcimg2').css('display', "block");
       }
       $('#calccontainer #calcimg2').css('top', imageTop + "px");
       $('#calccontainer #calcimg2').css('left', imageLeft + "px");
@@ -1686,7 +1687,7 @@ $(function() {
     $('#progressbar').css('width', (screenWidth - progress_bar_left * 2) + "px");
     $('#progressbar').css('left', (screenLeft + progress_bar_left) + "px");
 
-    if (windowWidth > 768) {
+    if (false) { //windowWidth > 768) {
       $('#calccontainer #calcback').css('top', (screenTop - calcBackOffsetTop * screenHeight / calcContainerHeight) + "px");
       $('#calccontainer #calcback').css('left', (screenLeft - calcBackOffsetLeft * screenWidth / calcContainerWidth) + "px");
       $('#calccontainer #calcback').css('width', (screenWidth + (calcBackOffsetLeft + calcBackOffsetRight) * screenWidth / calcContainerWidth) + "px");
@@ -1711,18 +1712,20 @@ $(function() {
   }
   window.onresize = adjustComponentsSize;
   adjustComponentsSize();
+  adjustComponentsSize();
   if (!disclaimerExpireFlag) {
     adjustBarTooltipVisible = true;
     adjustAdjustTooltip();
   }
   function displayElements() {
-    if (displayStyle == 1) {
-      $('#calccontainer #calcimg').css('display', "block");
-      $('#calccontainer #calcimg2').css('display', "none");
-    } else {
-      $('#calccontainer #calcimg').css('display', "none");
-      $('#calccontainer #calcimg2').css('display', "block");
-    }
+    // if (displayStyle == 1) {
+    //   $('#calccontainer #calcimg').css('display', "block");
+    //   $('#calccontainer #calcimg2').css('display', "none");
+    // } else {
+    //   $('#calccontainer #calcimg').css('display', "none");
+    //   $('#calccontainer #calcimg2').css('display', "block");
+    // }
+    $('#calccontainer #calcimg2').css('display', "block");
     $('#keyboardcontainer').css('display', 'block');
     $('#progressbar').css('display', 'block');
   }
@@ -1812,11 +1815,11 @@ $(function() {
       adjustComponentsSize();
     }
     if (minSkinHeight > tempDivideTop) {
-      if (displayStyle == 1) {
-        displayStyle = 2;
-      } else {
-        displayStyle = 1;
-      }
+    //   if (displayStyle == 1) {
+    //     displayStyle = 2;
+    //   } else {
+    //     displayStyle = 1;
+    //   }
       adjustComponentsSize();
     }
     if ((minSkinHeight <= tempDivideTop) && ((windowHeight - minKeyboardHeight) >= tempDivideTop)) {
@@ -1825,4 +1828,8 @@ $(function() {
     }
   }
   document.addEventListener('touchmove', onTouchMove);
+  setTimeout(function() {
+    adjustComponentsSize();
+    //$('#calccontainer #calcimg2').css('display', "block");
+  }, 500);
 });
