@@ -1738,15 +1738,29 @@ $(function() {
   }
   displayElements();
   downloadV12MV12();
+  function openUrl() {
+    window.open('https://github.com/jupdike/ti89-emu/', '_blank'); 
+  }
   function mapKeyboardButton(btnid, key, imgid) {
     var button_el = document.getElementById(btnid);
     var image_el = document.getElementById(imgid);
-    button_el.addEventListener("mousedown", function() { emu.setKey(key, 1); image_el.style.display = "block"; });
-    button_el.addEventListener("touchstart", function() { emu.setKey(key, 1); image_el.style.display = "block"; });
-    button_el.addEventListener("mouseup", function() { emu.setKey(key, 0); image_el.style.display = "none"; });
-    button_el.addEventListener("touchend", function() { emu.setKey(key, 0); image_el.style.display = "none"; });
-    button_el.addEventListener("touchleave", function() { emu.setKey(key, 0); image_el.style.display = "none"; });
-    button_el.addEventListener("touchcancel", function() { emu.setKey(key, 0); image_el.style.display = "none"; });
+    if (btnid !== 'onbutton') {
+      button_el.addEventListener("mousedown", function() { emu.setKey(key, 1); image_el.style.display = "block"; });
+      button_el.addEventListener("touchstart", function() { emu.setKey(key, 1); image_el.style.display = "block"; });
+      button_el.addEventListener("mouseup", function() { emu.setKey(key, 0); image_el.style.display = "none"; });
+      button_el.addEventListener("touchend", function() { emu.setKey(key, 0); image_el.style.display = "none"; });
+      button_el.addEventListener("touchleave", function() { emu.setKey(key, 0); image_el.style.display = "none"; });
+      button_el.addEventListener("touchcancel", function() { emu.setKey(key, 0); image_el.style.display = "none"; });
+    }
+    else {
+      button_el.addEventListener("mousedown", function() { image_el.style.display = "block"; });
+      button_el.addEventListener("touchstart", function() { image_el.style.display = "block"; });
+      button_el.addEventListener("mouseup", function() { openUrl(); image_el.style.display = "none"; });
+      //button_el.addEventListener("touchend", function() { openUrl(); image_el.style.display = "none"; });
+      button_el.addEventListener("touchleave", function() { image_el.style.display = "none"; });
+      button_el.addEventListener("touchcancel", function() { image_el.style.display = "none"; });
+      //button_el.addEventListener("onclick", function() { openUrl(); image_el.style.display = "none"; });
+    }
   }
   adjustBar.onmousedown = function(event) {
     if (!loadingMemory) { return; }
