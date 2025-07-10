@@ -1824,6 +1824,11 @@ $(function() {
   function onTouchMove(event) {
     if (!loadingMemory) { return; }
     var touchLocation = event.targetTouches[0];
+    var invalidDragLocation = (touchLocation.pageX > 0.1 * window.innerWidth) &&
+                              (touchLocation.pageX < 0.9 * window.innerWidth);
+    if (invalidDragLocation) {
+        return; // ignore touch drags except at the left and right edges
+    }
     var tempDivideTop = touchLocation.pageY;
     if ((windowHeight - minKeyboardHeight) < tempDivideTop) {
       if (windowWidth >= 768) {
