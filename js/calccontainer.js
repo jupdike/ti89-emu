@@ -1271,8 +1271,9 @@ $(function() {
   const calcBackOffsetTop = 200; const calcBackOffsetRight = 400; const calcBackOffsetBottom = 200; const calcBackOffsetLeft = 400;
 
   var keysStyle = 1;
-  const keysContainerWidth1 = 10510; const keysContainerHeight1 = 15360;
-  const keysContainerWidth2 = 20780; const keysContainerHeight2 = 8100;
+  //1.05 ratio is to force extra space at the bottom for safe area insets on iOS devices (home indicator swipe area)
+  const keysContainerWidth1 = 10510; const keysContainerHeight1 = 15360*1.05;
+  const keysContainerWidth2 = 20780; const keysContainerHeight2 = 8100*1.05;
   const keyDefaultWidth1 = 1880; const keyDefaultHeight1 = 1500;
   const keyDefaultWidth2 = 1680; const keyDefaultHeight2 = 1500;
   const pressedDefaultWidth1 = 1880; const pressedDefaultHeight1 = 1071;
@@ -1295,7 +1296,7 @@ $(function() {
   var keysMarginRight = 5;
   var windowWidth = window.innerWidth;
   var windowHeight = window.innerHeight;
-  var divideTopRatio = 0.5;
+  var divideTopRatio = 0.35;
   const minSkinHeight = 100;
   const minKeyboardHeight = 100;
   const adjustHeight = 25;
@@ -1827,6 +1828,7 @@ $(function() {
     var invalidDragLocation = (touchLocation.pageX > 0.1 * window.innerWidth) &&
                               (touchLocation.pageX < 0.9 * window.innerWidth);
     if (invalidDragLocation) {
+        event.preventDefault(); // prevent scrolling
         return; // ignore touch drags except at the left and right edges
     }
     var tempDivideTop = touchLocation.pageY;
@@ -1853,7 +1855,8 @@ $(function() {
       adjustComponentsSize();
     }
   }
-  document.addEventListener('touchmove', onTouchMove);
+  // prevent scrolling / bounce on touchmove, see https://stackoverflow.com/a/49853392/2543
+  document.addEventListener('touchmove', onTouchMove, { passive: false });
   setTimeout(function() {
     adjustComponentsSize();
     //$('#calccontainer #calcimg2').css('display', "block");
